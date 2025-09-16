@@ -42,4 +42,5 @@
 .bg-pink-custom {
   background-color: #ED6495;
 }
+
 </style>
