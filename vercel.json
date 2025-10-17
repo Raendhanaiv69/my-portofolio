@@ -30,8 +30,8 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
-    "APP_URL": "https://yourproductionurl.com",
-    "APP_KEY": "base64:TGaVaXwhWgjn9akhE4SCSIjGG/cQqvICUQ+PgLA3Bs0=",
+    "APP_URL": "https://my-portofolio-1mlf.vercel.app",
+    "APP_KEY": "base64:f8g4Nz3EUIU+0+JEqdo0ocNXVVjg/z1KJfkiF8FmCVg=",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
@@ -42,9 +42,10 @@
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie",
     "DB_CONNECTION": "mysql",
-    "DB_HOST": "4gg.h.filess.io",
-    "DB_PORT": "3306",
-    "DB_DATABASE": "db2024_stormtorn",
-    "DB_USERNAME": "db2024_stormtorn"
+    "DB_HOST": "lz7t65.h.filess.io",
+    "DB_PORT": "3307",
+    "DB_DATABASE": "portofolio_artneartax",
+    "DB_USERNAME": "portofolio_artneartax",
+    "DB_PASSWORD": "05b0712b02a52229dc1d86f6d29e4dd24e4c729e"
   }
 }
