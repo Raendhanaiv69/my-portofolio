@@ -11,7 +11,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // --- BARIS PENTING UNTUK VERCEL ---
+        // Ini memberi tahu Laravel untuk mempercayai semua proxy (Vercel)
+        // sehingga request()->secure() dan asset() berfungsi dengan benar.
+        $middleware->trustProxies(at: '*');
+        // ------------------------------------
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
