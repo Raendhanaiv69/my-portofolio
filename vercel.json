@@ -3,17 +3,14 @@
   "framework": null,
   "functions": {
     "api/index.php": {
-      // HARUS menggunakan runtime komunitas vercel-php, BUKAN @vercel/php
       "runtime": "vercel-php@0.7.1" 
     }
   },
   "routes": [
-    // Rute untuk aset statis
     {
       "src": "/(css|js|images|svg|build)/(.*)",
       "dest": "/public/$1/$2"
     },
-    // Rute utama ke Serverless Function
     {
       "src": "/(.*)",
       "dest": "/api/index.php"
