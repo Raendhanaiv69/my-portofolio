@@ -3,35 +3,31 @@
   "framework": null,
   "functions": {
     "api/index.php": {
+      // HARUS menggunakan runtime komunitas vercel-php, BUKAN @vercel/php
       "runtime": "vercel-php@0.7.1" 
     }
   },
   "routes": [
+    // Rute untuk aset statis
     {
       "src": "/(css|js|images|svg|build)/(.*)",
       "dest": "/public/$1/$2"
     },
+    // Rute utama ke Serverless Function
     {
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
   ],
-  "buildCommand": "composer install --no-dev && npm install && npm run build",
+  "buildCommand": "php /usr/local/bin/composer install --no-dev && npm install && npm run build",
   "outputDirectory": "public",
   "env": {
     "APP_ENV": "production",
-    "APP_DEBUG": "false", 
-    "APP_URL": "https://yourproductionurl.com",
-    
+    "APP_DEBUG": "false",
+    "LOG_CHANNEL": "stderr",
+    "SESSION_DRIVER": "cookie",
+    "CACHE_DRIVER": "file",
     "APP_CONFIG_CACHE": "/tmp/config.php",
-    "APP_EVENTS_CACHE": "/tmp/events.php",
-    "APP_PACKAGES_CACHE": "/tmp/packages.php",
-    "APP_ROUTES_CACHE": "/tmp/routes.php",
-    "APP_SERVICES_CACHE": "/tmp/services.php",
-    "VIEW_COMPILED_PATH": "/tmp/views", 
-    "CACHE_DRIVER": "file", 
-    "LOG_CHANNEL": "stderr", 
-    "SESSION_DRIVER": "cookie"
-    
+    "VIEW_COMPILED_PATH": "/tmp/views"
   }
 }
