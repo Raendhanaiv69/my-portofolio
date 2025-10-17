@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
-    "postinstall": "composer install --no-dev" 
+    "dev": "vite"
     
   },
   "devDependencies": {
