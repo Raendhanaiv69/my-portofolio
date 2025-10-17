@@ -30,8 +30,8 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
-    "APP_URL": "https://my-portofolio-1mlf.vercel.app",
-    "APP_KEY": "base64:f8g4Nz3EUIU+0+JEqdo0ocNXVVjg/z1KJfkiF8FmCVg=",
+    "APP_URL": "https://raendhana-my-portofolio.vercel.app",
+    "APP_KEY": "base64:HdP3fGfBLi8CA9Y0+eMCRLEFoPcdnnQ+fyqVmcMIWV0=",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
