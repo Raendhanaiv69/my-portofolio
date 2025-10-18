@@ -23,24 +23,18 @@
   "public": true,
   
   
-  "buildCommand": "vite build",
+  "buildCommand": "php artisan config:clear && php artisan route:clear && vite build",
   "outputDirectory": "public",
-  
   
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
     "APP_URL": "https://raendhana-my-portofolio.vercel.app",
     "APP_KEY": "base64:HdP3fGfBLi8CA9Y0+eMCRLEFoPcdnnQ+fyqVmcMIWV0=",
-    "APP_CONFIG_CACHE": "/tmp/config.php",
-    "APP_EVENTS_CACHE": "/tmp/events.php",
-    "APP_PACKAGES_CACHE": "/tmp/packages.php",
-    "APP_ROUTES_CACHE": "/tmp/routes.php",
-    "APP_SERVICES_CACHE": "/tmp/services.php",
-    "VIEW_COMPILED_PATH": "/tmp",
-    "CACHE_DRIVER": "array",
-    "LOG_CHANNEL": "stderr",
-    "SESSION_DRIVER": "cookie",
+    
+    "VIEW_COMPILED_PATH": "/tmp", 
+    "APP_CONFIG_CACHE": "/tmp/config.php", 
+    
     "DB_CONNECTION": "mysql",
     "DB_HOST": "lz7t65.h.filess.io",
     "DB_PORT": "3307",
